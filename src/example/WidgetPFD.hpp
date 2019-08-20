@@ -56,7 +56,7 @@ class LayoutSquare;
 
 namespace Ui { class WidgetPFD; }
 
-class WidgetPFD : public QWidget
+class QFI_EXPORT WidgetPFD : public QWidget
 {
     Q_OBJECT
 
