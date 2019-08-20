@@ -49,6 +49,7 @@
 #define __qfi_Pfd_H__
 
 #include <QGraphicsView>
+#include "QfiExport.h"
 
 class QWidget;
 class QResizeEvent;
@@ -61,7 +62,7 @@ namespace qfi {
 // Class: Pfd
 // Description: Primary Flight Display widget
 //---------------------------------------------------
-class Pfd : public QGraphicsView
+class QFI_EXPORT Pfd : public QGraphicsView
 {
     Q_OBJECT
 
