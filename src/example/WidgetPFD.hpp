@@ -98,9 +98,7 @@ public:
         m_pfd->setAltitude( altitude );
     }
 
-    inline void setPressure(const float pressure) {
-        m_pfd->setPressure( pressure, qfi::Pfd::IN );
-    }
+    inline void setPressure(const float pressure);
 
     inline void setAirspeed(const float airspeed) {
         m_pfd->setAirspeed( airspeed );
