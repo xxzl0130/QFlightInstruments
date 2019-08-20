@@ -54,6 +54,7 @@ class QWidget;
 class QLayoutItem;
 
 #include <QRect>
+#include "QfiExport.h"
 
 class QFI_EXPORT LayoutSquare : public QLayout
 {
