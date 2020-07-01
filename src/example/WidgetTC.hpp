@@ -64,8 +64,10 @@ public:
     explicit WidgetTC(QWidget* parent = nullptr);
     ~WidgetTC();
 
+public slots:
     inline void update() {
         m_tc->update();
+        QWidget::update();
     }
 
     inline void setTurnRate(const float turnRate) {

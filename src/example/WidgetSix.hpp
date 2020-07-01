@@ -67,6 +67,7 @@ public:
     explicit WidgetSix(QWidget* parent = nullptr);
     ~WidgetSix();
 
+public slots:
     void update();
 
     inline void setRoll(const float roll) {

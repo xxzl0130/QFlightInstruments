@@ -67,8 +67,10 @@ public:
     explicit WidgetVSI(QWidget* parent = nullptr);
     ~WidgetVSI();
 
+public slots:
     inline void update() {
         m_vsi->update();
+        QWidget::update();
     }
 
     inline void setClimbRate(const float climbRate) {

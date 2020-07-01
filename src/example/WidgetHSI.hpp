@@ -64,8 +64,10 @@ public:
     explicit WidgetHSI(QWidget* parent = nullptr);
     ~WidgetHSI();
 
+public slots:
     inline void update() {
         m_hsi->update();
+        QWidget::update();
     }
 
     inline void setHeading(const float heading) {

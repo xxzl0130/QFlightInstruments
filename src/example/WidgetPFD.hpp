@@ -64,8 +64,10 @@ public:
     explicit WidgetPFD(QWidget* parent = nullptr);
     virtual ~WidgetPFD();
 
+public slots:
     inline void update() {
         m_pfd->update();
+        QWidget::update();
     }
 
     inline void setRoll(const float roll) {

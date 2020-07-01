@@ -64,8 +64,10 @@ public:
     explicit WidgetALT(QWidget* parent = nullptr);
     ~WidgetALT();
 
+public slots:
     inline void update() {
         m_alt->update();
+        QWidget::update();
     }
 
     inline void setAltitude(const float altitude) {

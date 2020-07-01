@@ -63,9 +63,10 @@ class QFI_EXPORT WidgetASI : public QWidget
 public:
     explicit WidgetASI(QWidget* parent = nullptr);
     ~WidgetASI();
-
+public slots:
     inline void update() {
         m_asi->update();
+        QWidget::update();
     }
 
     inline void setAirspeed(const float airspeed) {

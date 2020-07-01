@@ -63,9 +63,10 @@ class QFI_EXPORT WidgetADI : public QWidget
 public:
     explicit WidgetADI(QWidget* parent = nullptr);
     ~WidgetADI();
-
+public slots:
     inline void update() {
         m_adi->update();
+        QWidget::update();
     }
 
     inline void setRoll(const float roll) {
