@@ -157,8 +157,8 @@ void MainWindow::timerEvent(QTimerEvent* event)
     m_ui->widgetPFD->setAirspeed(airspeed);
     m_ui->widgetPFD->setMachNo(machNo);
     m_ui->widgetPFD->setAltitude(altitude);
-    m_ui->widgetPFD->setPressure(pressure);
-    m_ui->widgetPFD->setClimbRate(climbRate / 100.0f);
+    m_ui->widgetPFD->setPressureText(QString::number(pressure) + "aaa");
+    m_ui->widgetPFD->setClimbRate(climbRate);
 
     m_ui->widgetNAV->setHeading(heading);
     m_ui->widgetNAV->setHeadingBug(0.0f);

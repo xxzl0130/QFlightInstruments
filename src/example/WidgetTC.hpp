@@ -56,7 +56,7 @@ class LayoutSquare;
 
 namespace Ui { class WidgetTC; }
 
-class QFI_EXPORT WidgetTC : public QWidget
+class WidgetTC : public QWidget
 {
     Q_OBJECT
 
@@ -64,10 +64,8 @@ public:
     explicit WidgetTC(QWidget* parent = nullptr);
     ~WidgetTC();
 
-public slots:
     inline void update() {
         m_tc->update();
-        QWidget::update();
     }
 
     inline void setTurnRate(const float turnRate) {

@@ -775,6 +775,14 @@ void Pfd::ALT::setPressure(const float pressure, const int pressureUnit)
 
     if      ( pressureUnit == 1 ) m_pressureUnit = 1;
     else if ( pressureUnit == 2 ) m_pressureUnit = 2;
+
+    m_pressureUseText = false;
+}
+
+void Pfd::ALT::setPressureText(const QString& text)
+{
+    m_pressureUseText = true;
+    m_pressureText = text;
 }
 
 void Pfd::ALT::reset()
@@ -815,13 +823,16 @@ void Pfd::ALT::updateAltitude()
 
 void Pfd::ALT::updatePressure()
 {
-    if (m_pressureUnit == 0) {
-        m_itemPressure->setPlainText( QString( "  STD  " ) );
-    } else if ( m_pressureUnit == 1 ) {
-        m_itemPressure->setPlainText( QString::number( m_pressure, 'f', 0 ) + QString( " MB" ) );
-    } else if ( m_pressureUnit == 2 ) {
-        m_itemPressure->setPlainText( QString::number( m_pressure, 'f', 2 ) + QString( " IN" ) );
+    if(!m_pressureUseText){
+        if (m_pressureUnit == 0) {
+            m_pressureText = QString( "  STD  " );
+        } else if ( m_pressureUnit == 1 ) {
+            m_pressureText = QString::number( m_pressure, 'f', 0 ) + QString( " MB" );
+        } else if ( m_pressureUnit == 2 ) {
+            m_pressureText = QString::number( m_pressure, 'f', 2 ) + QString( " IN" );
+        }
     }
+    m_itemPressure->setPlainText(m_pressureText);
 }
 
 void Pfd::ALT::updateScale()
@@ -1367,8 +1378,8 @@ void Pfd::VSI::setClimbRate(const float climbRate)
 {
     m_climbRate = climbRate;
 
-    if      ( m_climbRate >  6.3f ) m_climbRate =  6.3f;
-    else if ( m_climbRate < -6.3f ) m_climbRate = -6.3f;
+    if      ( m_climbRate >  10.5f ) m_climbRate =  10.5f;
+    else if ( m_climbRate < -10.5f ) m_climbRate = -10.5f;
 }
 
 void Pfd::VSI::reset()
@@ -1387,12 +1398,12 @@ void Pfd::VSI::updateVSI()
     const float climbRateAbs{static_cast<float>(fabs(m_climbRate))};
     float arrowDeltaY{};
 
-    if ( climbRateAbs <= 1.0f ) {
-        arrowDeltaY = m_originalPixPerSpd1 * climbRateAbs;
-    } else if ( climbRateAbs <= 2.0f ) {
-        arrowDeltaY = m_originalPixPerSpd1 + m_originalPixPerSpd2 * ( climbRateAbs - 1.0f );
+    if ( climbRateAbs <= 2.0f ) {
+        arrowDeltaY = m_originalPixPerSpd2 * climbRateAbs;
+    } else if ( climbRateAbs <= 5.0f ) {
+        arrowDeltaY = m_originalPixPerSpd2*2 + m_originalPixPerSpd5 * ( climbRateAbs - 2.0f );
     } else {
-        arrowDeltaY = m_originalPixPerSpd1 + m_originalPixPerSpd2 + m_originalPixPerSpd4 * ( climbRateAbs - 2.0f );
+        arrowDeltaY = m_originalPixPerSpd2*2 + m_originalPixPerSpd5*3 + m_originalPixPerSpd10 * ( climbRateAbs - 5.0f );
     }
 
     if ( m_climbRate < 0.0f ) arrowDeltaY *= -1.0f;

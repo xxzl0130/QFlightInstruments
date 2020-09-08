@@ -19,15 +19,13 @@ win32: DEFINES += WIN32 _WINDOWS _USE_MATH_DEFINES
 win32:CONFIG(release, debug|release):    DEFINES += NDEBUG
 else:win32:CONFIG(debug, debug|release): DEFINES += _DEBUG
 
-DEFINES += QFI_STATIC
-
 #-------------------------------------------------
 
 INCLUDEPATH += ./ ./example
 
 #-------------------------------------------------
 
-HEADERS += QfiExport.h\
+HEADERS += \
     example/LayoutSquare.hpp \
     example/MainWindow.hpp \
     example/WidgetADI.hpp \

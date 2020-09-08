@@ -59,7 +59,7 @@
 
 namespace Ui { class WidgetSix; }
 
-class QFI_EXPORT WidgetSix : public QWidget
+class WidgetSix : public QWidget
 {
     Q_OBJECT
 
@@ -67,7 +67,6 @@ public:
     explicit WidgetSix(QWidget* parent = nullptr);
     ~WidgetSix();
 
-public slots:
     void update();
 
     inline void setRoll(const float roll) {

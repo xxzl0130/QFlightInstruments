@@ -64,11 +64,6 @@ WidgetPFD::~WidgetPFD()
     if ( m_ui ) { delete m_ui; m_ui = nullptr; }
 }
 
-void WidgetPFD::setPressure(const float pressure)
-{
-    m_pfd->setPressure(pressure, qfi::Pfd::IN);
-}
-
 void WidgetPFD::setupUi()
 {
     m_layoutSq = new LayoutSquare(this);

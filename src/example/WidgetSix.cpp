@@ -74,5 +74,4 @@ void WidgetSix::update()
     m_ui->widgetHSI->update();
     m_ui->widgetTC->update();
     m_ui->widgetVSI->update();
-    QWidget::update();
 }

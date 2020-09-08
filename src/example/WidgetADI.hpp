@@ -56,17 +56,16 @@ class LayoutSquare;
 
 namespace Ui { class WidgetADI; }
 
-class QFI_EXPORT WidgetADI : public QWidget
+class WidgetADI : public QWidget
 {
     Q_OBJECT
     
 public:
     explicit WidgetADI(QWidget* parent = nullptr);
     ~WidgetADI();
-public slots:
+
     inline void update() {
         m_adi->update();
-        QWidget::update();
     }
 
     inline void setRoll(const float roll) {

@@ -56,17 +56,16 @@ class LayoutSquare;
 
 namespace Ui { class WidgetNAV; }
 
-class QFI_EXPORT WidgetNAV : public QWidget
+class WidgetNAV : public QWidget
 {
     Q_OBJECT
 
 public:
     explicit WidgetNAV(QWidget* parent = nullptr);
     virtual ~WidgetNAV();
-public slots:
+
     inline void update() {
         m_nav->update();
-        QWidget::update();
     }
 
     inline void setHeading(const float heading) {

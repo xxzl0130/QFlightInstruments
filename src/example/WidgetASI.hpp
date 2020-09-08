@@ -56,17 +56,16 @@ class LayoutSquare;
 
 namespace Ui { class WidgetASI; }
 
-class QFI_EXPORT WidgetASI : public QWidget
+class WidgetASI : public QWidget
 {
     Q_OBJECT
     
 public:
     explicit WidgetASI(QWidget* parent = nullptr);
     ~WidgetASI();
-public slots:
+
     inline void update() {
         m_asi->update();
-        QWidget::update();
     }
 
     inline void setAirspeed(const float airspeed) {

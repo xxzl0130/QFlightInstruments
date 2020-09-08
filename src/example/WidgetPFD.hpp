@@ -56,7 +56,7 @@ class LayoutSquare;
 
 namespace Ui { class WidgetPFD; }
 
-class QFI_EXPORT WidgetPFD : public QWidget
+class WidgetPFD : public QWidget
 {
     Q_OBJECT
 
@@ -64,10 +64,8 @@ public:
     explicit WidgetPFD(QWidget* parent = nullptr);
     virtual ~WidgetPFD();
 
-public slots:
     inline void update() {
         m_pfd->update();
-        QWidget::update();
     }
 
     inline void setRoll(const float roll) {
@@ -100,7 +98,13 @@ public slots:
         m_pfd->setAltitude( altitude );
     }
 
-    inline void setPressure(const float pressure);
+    inline void setPressure(const float pressure) {
+        m_pfd->setPressure( pressure, qfi::Pfd::IN );
+    }
+
+    inline void setPressureText(const QString& text){
+        m_pfd->setPressureText(text);
+    }
 
     inline void setAirspeed(const float airspeed) {
         m_pfd->setAirspeed( airspeed );

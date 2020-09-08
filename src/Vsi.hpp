@@ -49,7 +49,6 @@
 #define __qfi_Vsi_H__
 
 #include <QGraphicsView>
-#include "QfiExport.h"
 
 class QWidget;
 class QResizeEvent;
@@ -62,7 +61,7 @@ namespace qfi {
 // Class: Vsi
 // Description: Vertical Speed Indicator widget
 //---------------------------------------------------
-class QFI_EXPORT Vsi : public QGraphicsView
+class Vsi : public QGraphicsView
 {
     Q_OBJECT
 

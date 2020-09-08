@@ -49,7 +49,6 @@
 #define __qfi_Pfd_H__
 
 #include <QGraphicsView>
-#include "QfiExport.h"
 
 class QWidget;
 class QResizeEvent;
@@ -62,7 +61,7 @@ namespace qfi {
 // Class: Pfd
 // Description: Primary Flight Display widget
 //---------------------------------------------------
-class QFI_EXPORT Pfd : public QGraphicsView
+class Pfd : public QGraphicsView
 {
     Q_OBJECT
 
@@ -157,6 +156,11 @@ public:
     inline void setPressure(const float pressure, const PressureUnit pressureUnit )
     {
         m_alt->setPressure( pressure, pressureUnit );
+    }
+
+    inline void setPressureText(const QString& text)
+    {
+        m_alt->setPressureText(text);
     }
 
     // airspeed (dimensionless numeric value)
@@ -327,6 +331,7 @@ private:
         void update(const float scaleX, const float scaleY);
         void setAltitude(const float);
         void setPressure(const float pressure, const int pressureUnit);
+        void setPressureText(const QString& text);
 
     private:
         void reset();
@@ -359,6 +364,8 @@ private:
         float m_pressure{};
 
         int m_pressureUnit{};
+        bool m_pressureUseText = false;
+        QString m_pressureText;
 
         float m_scale1DeltaY_new{};
         float m_scale1DeltaY_old{};
@@ -536,9 +543,9 @@ private:
         float m_scaleY{1.0f};
 
         const float m_originalMarkeHeight{75.0f};
-        const float m_originalPixPerSpd1{30.0f};
-        const float m_originalPixPerSpd2{20.0f};
-        const float m_originalPixPerSpd4{5.0f};
+        const float m_originalPixPerSpd2{30.0f*1/2};
+        const float m_originalPixPerSpd5{20.0f*1/3};
+        const float m_originalPixPerSpd10{5.0f*4/5};
 
         QPointF m_originalScalePos{275.0f,  50.0f};
         QPointF m_originalArrowPos{284.0f, 124.0f};

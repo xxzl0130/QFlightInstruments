@@ -49,7 +49,6 @@
 #define __qfi_Tc_H__
 
 #include <QGraphicsView>
-#include "QfiExport.h"
 
 class QWidget;
 class QResizeEvent;
@@ -62,7 +61,7 @@ namespace qfi {
 // Class: Tc
 // Description: Turn Coordinator
 //---------------------------------------------------
-class QFI_EXPORT Tc : public QGraphicsView
+class Tc : public QGraphicsView
 {
     Q_OBJECT
 

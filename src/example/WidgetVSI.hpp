@@ -58,7 +58,7 @@ class LayoutSquare;
 
 namespace Ui { class WidgetVSI; }
 
-class QFI_EXPORT WidgetVSI : public QWidget
+class WidgetVSI : public QWidget
 {
     Q_OBJECT
 
@@ -67,10 +67,8 @@ public:
     explicit WidgetVSI(QWidget* parent = nullptr);
     ~WidgetVSI();
 
-public slots:
     inline void update() {
         m_vsi->update();
-        QWidget::update();
     }
 
     inline void setClimbRate(const float climbRate) {

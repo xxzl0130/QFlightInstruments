@@ -27,7 +27,7 @@ INCLUDEPATH += ./
 
 #-------------------------------------------------
 
-HEADERS += QfiExport.h\
+HEADERS += \
     Adi.hpp \
     Alt.hpp \
     Asi.hpp \

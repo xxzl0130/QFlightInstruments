@@ -56,7 +56,7 @@ class LayoutSquare;
 
 namespace Ui { class WidgetALT; }
 
-class QFI_EXPORT WidgetALT : public QWidget
+class WidgetALT : public QWidget
 {
     Q_OBJECT
 
@@ -64,10 +64,8 @@ public:
     explicit WidgetALT(QWidget* parent = nullptr);
     ~WidgetALT();
 
-public slots:
     inline void update() {
         m_alt->update();
-        QWidget::update();
     }
 
     inline void setAltitude(const float altitude) {

@@ -56,7 +56,7 @@ class LayoutSquare;
 
 namespace Ui { class WidgetHSI; }
 
-class QFI_EXPORT WidgetHSI : public QWidget
+class WidgetHSI : public QWidget
 {
     Q_OBJECT
 
@@ -64,10 +64,8 @@ public:
     explicit WidgetHSI(QWidget* parent = nullptr);
     ~WidgetHSI();
 
-public slots:
     inline void update() {
         m_hsi->update();
-        QWidget::update();
     }
 
     inline void setHeading(const float heading) {

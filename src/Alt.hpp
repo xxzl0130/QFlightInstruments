@@ -49,7 +49,6 @@
 #define __qfi_Alt_H__
 
 #include <QGraphicsView>
-#include "QfiExport.h"
 
 class QWidget;
 class QResizeEvent;
@@ -62,7 +61,7 @@ namespace qfi {
 // Class: Alt
 // Description: Barometric Altimeter
 //---------------------------------------------------
-class QFI_EXPORT Alt : public QGraphicsView
+class Alt : public QGraphicsView
 {
     Q_OBJECT
 
