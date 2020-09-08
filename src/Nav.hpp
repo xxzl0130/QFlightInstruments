@@ -49,6 +49,7 @@
 #define __qfi_Nav_H__
 
 #include <QGraphicsView>
+#include "QfiExport.h"
 
 class QWidget;
 class QResizeEvent;
@@ -61,7 +62,7 @@ namespace qfi {
 // Class: Nav
 // Description: Navigation Display
 //---------------------------------------------------
-class Nav : public QGraphicsView
+class QFI_EXPORT Nav : public QGraphicsView
 {
     Q_OBJECT
 

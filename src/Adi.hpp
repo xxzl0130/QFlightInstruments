@@ -49,6 +49,7 @@
 #define __qfi_Adi_H__
 
 #include <QGraphicsView>
+#include "QfiExport.h"
 
 class QWidget;
 class QResizeEvent;
@@ -61,7 +62,7 @@ namespace qfi {
 // Class: Adi
 // Description: Attitude Director Indicator
 //---------------------------------------------------
-class Adi : public QGraphicsView
+class QFI_EXPORT Adi : public QGraphicsView
 {
     Q_OBJECT
 

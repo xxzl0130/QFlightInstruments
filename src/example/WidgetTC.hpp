@@ -56,7 +56,7 @@ class LayoutSquare;
 
 namespace Ui { class WidgetTC; }
 
-class WidgetTC : public QWidget
+class QFI_EXPORT WidgetTC : public QWidget
 {
     Q_OBJECT
 

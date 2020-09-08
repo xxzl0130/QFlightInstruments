@@ -49,13 +49,14 @@
 #define __LAYOUTSQUARE_H__
 
 #include <QLayout>
+#include "QfiExport.h"
 
 class QWidget;
 class QLayoutItem;
 
 #include <QRect>
 
-class LayoutSquare : public QLayout
+class QFI_EXPORT LayoutSquare : public QLayout
 {
     Q_OBJECT
 

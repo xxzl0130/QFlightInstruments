@@ -58,7 +58,7 @@ class LayoutSquare;
 
 namespace Ui { class WidgetVSI; }
 
-class WidgetVSI : public QWidget
+class QFI_EXPORT WidgetVSI : public QWidget
 {
     Q_OBJECT
 

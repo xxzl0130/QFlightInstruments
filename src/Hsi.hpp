@@ -49,6 +49,7 @@
 #define __qfi_Hsi_H__
 
 #include <QGraphicsView>
+#include "QfiExport.h"
 
 class QWidget;
 class QResizeEvent;
@@ -61,7 +62,7 @@ namespace qfi {
 // Class: Hsi
 // Description: Horizontal Situation Indicator widget
 //---------------------------------------------------
-class Hsi : public QGraphicsView
+class QFI_EXPORT Hsi : public QGraphicsView
 {
     Q_OBJECT
 

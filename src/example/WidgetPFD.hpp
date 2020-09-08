@@ -56,7 +56,7 @@ class LayoutSquare;
 
 namespace Ui { class WidgetPFD; }
 
-class WidgetPFD : public QWidget
+class QFI_EXPORT WidgetPFD : public QWidget
 {
     Q_OBJECT
 
@@ -98,9 +98,7 @@ public:
         m_pfd->setAltitude( altitude );
     }
 
-    inline void setPressure(const float pressure) {
-        m_pfd->setPressure( pressure, qfi::Pfd::IN );
-    }
+    void setPressure(const float pressure);
 
     inline void setPressureText(const QString& text){
         m_pfd->setPressureText(text);

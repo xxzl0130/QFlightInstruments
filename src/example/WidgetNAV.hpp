@@ -56,7 +56,7 @@ class LayoutSquare;
 
 namespace Ui { class WidgetNAV; }
 
-class WidgetNAV : public QWidget
+class QFI_EXPORT WidgetNAV : public QWidget
 {
     Q_OBJECT
 

@@ -73,3 +73,7 @@ void WidgetPFD::setupUi()
 
     setLayout(m_layoutSq);
 }
+
+void WidgetPFD::setPressure(const float pressure) {
+    m_pfd->setPressure(pressure, qfi::Pfd::MB);
+}

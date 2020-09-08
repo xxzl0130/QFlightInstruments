@@ -49,6 +49,7 @@
 #define __qfi_Asi_H__
 
 #include <QGraphicsView>
+#include "QfiExport.h"
 
 class QWidget;
 class QResizeEvent;
@@ -61,7 +62,7 @@ namespace qfi {
 // Class: Asi
 // Description: Airspeed Indicator
 //---------------------------------------------------
-class Asi : public QGraphicsView
+class QFI_EXPORT Asi : public QGraphicsView
 {
     Q_OBJECT
 

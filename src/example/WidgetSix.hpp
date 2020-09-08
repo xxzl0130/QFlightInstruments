@@ -59,7 +59,7 @@
 
 namespace Ui { class WidgetSix; }
 
-class WidgetSix : public QWidget
+class QFI_EXPORT WidgetSix : public QWidget
 {
     Q_OBJECT
 
