@@ -1086,9 +1086,6 @@ void Pfd::ASI::setAirspeed(const float airspeed)
 void Pfd::ASI::setMachNo(const float machNo)
 {
     m_machNo = machNo;
-
-    if      ( m_machNo <  0.0f ) m_machNo =  0.0f;
-    else if ( m_machNo > 99.9f ) m_machNo = 99.9f;
 }
 
 void Pfd::ASI::reset()
