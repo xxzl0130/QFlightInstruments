@@ -9,34 +9,27 @@
 	.st1{fill:#FFFFFF;}
 	.st2{font-family:'LiberationSans-Bold';}
 	.st3{font-size:10px;}
-	.st4{font-size:6px;}
 </style>
 <sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="-1789.8906" inkscape:cy="58.29529" inkscape:document-units="px" inkscape:guide-bbox="true" inkscape:object-nodes="true" inkscape:object-paths="false" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:snap-center="false" inkscape:snap-intersection-paths="true" inkscape:snap-midpoints="true" inkscape:snap-nodes="true" inkscape:snap-object-midpoints="false" inkscape:snap-smooth-nodes="false" inkscape:window-height="1005" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="-9" inkscape:window-y="-9" inkscape:zoom="0.12499999" pagecolor="#ffffff" showgrid="false" showguides="true">
 	</sodipodi:namedview>
-<g id="layer1" transform="translate(0,-902.36218)" inkscape:groupmode="layer" inkscape:label="Layer 1">
-	<g id="g4593" transform="translate(-350,99.999997)">
-		<rect id="rect3333-8" x="350" y="802.4" class="st0" width="19" height="150"/>
-		<g id="g4566">
-			<rect id="rect4256" x="350" y="876.9" class="st1" width="10" height="1"/>
-			<rect id="rect4256-2" x="356" y="861.9" class="st1" width="4" height="1"/>
-			<rect id="rect4256-2-4" x="356" y="846.9" class="st1" width="4" height="1"/>
-			<rect id="rect4256-2-4-5" x="356" y="836.9" class="st1" width="4" height="1"/>
-			<path id="rect4256-2-4-5-5" inkscape:connector-curvature="0" class="st1" d="M356,826.9h4v1h-4V826.9z"/>
-			<rect id="rect4256-2-4-5-5-1" x="356" y="816.9" class="st1" width="4" height="1"/>
-			<rect id="rect4256-2-4-5-5-1-7" x="356" y="806.9" class="st1" width="4" height="1"/>
-			<rect id="rect4256-2-5" x="356" y="891.9" class="st1" width="4" height="1"/>
-			<path id="rect4256-2-4-2" inkscape:connector-curvature="0" class="st1" d="M356,907.9h4v-1h-4V907.9z"/>
-			<rect id="rect4256-2-4-5-7" x="356" y="916.9" class="st1" width="4" height="1"/>
-			<rect id="rect4256-2-4-5-5-6" x="356" y="926.9" class="st1" width="4" height="1"/>
-			<rect id="rect4256-2-4-5-5-1-1" x="356" y="936.9" class="st1" width="4" height="1"/>
-			<rect id="rect4256-2-4-5-5-1-7-4" x="356" y="946.9" class="st1" width="4" height="1"/>
-		</g>
-	</g>
-</g>
-<text transform="matrix(1 0 0 1 0.4385 128.647)" class="st1 st2 st3">5</text>
-<text transform="matrix(1 0 0 1 0.785 108.5171)" class="st1 st2 st3">2</text>
-<text transform="matrix(1 0 0 1 8.761883e-05 147.0886)" class="st1 st2 st4">10</text>
-<text transform="matrix(1 0 0 1 0.7847 48.6423)" class="st1 st2 st3">2</text>
-<text transform="matrix(1 0 0 1 0.6082 28.4219)" class="st1 st2 st3">5</text>
-<text transform="matrix(1 0 0 1 -5.650520e-05 7.0229)" class="st1 st2 st4">10</text>
+<rect id="rect3333-8" y="0" class="st0" width="19" height="150"/>
+<rect id="rect4256" x="0" y="74.5" class="st1" width="15" height="1"/>
+<rect id="rect4256-2" x="11" y="59.5" class="st1" width="4" height="1"/>
+<rect id="rect4256-2-4" x="11" y="44.5" class="st1" width="4" height="1"/>
+<rect id="rect4256-2-4-5" x="11" y="34.5" class="st1" width="4" height="1"/>
+<path id="rect4256-2-4-5-5" inkscape:connector-curvature="0" class="st1" d="M11,24.5h4v1h-4V24.5z"/>
+<rect id="rect4256-2-4-5-5-1" x="11" y="14.5" class="st1" width="4" height="1"/>
+<rect id="rect4256-2-4-5-5-1-7" x="11" y="4.5" class="st1" width="4" height="1"/>
+<rect id="rect4256-2-5" x="11" y="89.5" class="st1" width="4" height="1"/>
+<path id="rect4256-2-4-2" inkscape:connector-curvature="0" class="st1" d="M11,105.5h4v-1h-4V105.5z"/>
+<rect id="rect4256-2-4-5-7" x="11" y="114.5" class="st1" width="4" height="1"/>
+<rect id="rect4256-2-4-5-5-6" x="11" y="124.5" class="st1" width="4" height="1"/>
+<rect id="rect4256-2-4-5-5-1-1" x="11" y="134.5" class="st1" width="4" height="1"/>
+<rect id="rect4256-2-4-5-5-1-7-4" x="11" y="144.5" class="st1" width="4" height="1"/>
+<text transform="matrix(1 0 0 1 5.1965 128.6475)" class="st1 st2 st3">5</text>
+<text transform="matrix(1 0 0 1 5.1963 108.5166)" class="st1 st2 st3">2</text>
+<text transform="matrix(1 0 0 1 1.831055e-04 148.7651)" class="st1 st2 st3">10</text>
+<text transform="matrix(1 0 0 1 5.1964 48.6425)" class="st1 st2 st3">2</text>
+<text transform="matrix(1 0 0 1 5.1964 28.4219)" class="st1 st2 st3">5</text>
+<text transform="matrix(1 0 0 1 -6.103516e-05 8.67)" class="st1 st2 st3">10</text>
 </svg>
